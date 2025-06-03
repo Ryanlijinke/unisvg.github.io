@@ -29,7 +29,9 @@ UniSVG_dataset = load_dataset("lili24/UniSVG")
 # Print the first example
 print(UniSVG_dataset[0])
 ```
-After downloading our UniSVG dataset, you can edit the inference code for your model and run the inference by:
+After downloading our UniSVG dataset, you can use your preferred models to finetune them on UniSVG/subset of UniSVG.
+
+After finnetuning, you can edit the inference code for your model and run the inference by:
 ```bash
 python infer.py
 ```
