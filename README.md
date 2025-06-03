@@ -47,7 +47,7 @@ python evaluation.py
 If you use this dataset in your research, please cite the following paper:
 
 ```bibtex
-@inproceedings{li2025unisvg,
+@article{li2025unisvg,
   title={UniSVG: A Unified Dataset for Vector Graphic Understanding and Generation with Multimodal Large Language Models},
   author={Li, Jinke and Yu, Jiarui and Wei, Chenxing and Dong, Hande and Lin, Qiang and Yang, Liangjing and Wang, Zhicai and Hao, Yanbin},
   year={2025}
