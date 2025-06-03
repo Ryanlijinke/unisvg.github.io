@@ -50,6 +50,5 @@ If you use this dataset in your research, please cite the following paper:
 @inproceedings{li2025unisvg,
   title={UniSVG: A Unified Dataset for Vector Graphic Understanding and Generation with Multimodal Large Language Models},
   author={Li, Jinke and Yu, Jiarui and Wei, Chenxing and Dong, Hande and Lin, Qiang and Yang, Liangjing and Wang, Zhicai and Hao, Yanbin},
-  booktitle={Proceedings of ACM Multimedia 2025 Dataset Track},
   year={2025}
 }
