@@ -28,10 +28,14 @@ UniSVG_dataset = load_dataset("lili24/UniSVG")
 # Print the first example
 print(UniSVG_dataset[0])
 ```
-
-After you successfully download the dataset, you can apply cairosvg to render SVG into PNG format:
+After downloading our UniSVG dataset, you can edit the inference code for your model and run the inference by:
 ```bash
-python convert_to_png.py
+python infer.py
+```
+
+You will get a inference json file with model answers in it, then please use the evaluation.py to get the final score:
+```bash
+python evaluation.py
 ```
 
 ## Citation
