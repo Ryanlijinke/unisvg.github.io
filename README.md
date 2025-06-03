@@ -19,7 +19,7 @@ pip install datasets
 ```
 Here is an example of how to load and use the dataset:
 
-```
+```python
 from datasets import load_dataset
 
 # Load the dataset
@@ -27,8 +27,13 @@ UniSVG_dataset = load_dataset("lili24/UniSVG")
 
 # Print the first example
 print(UniSVG_dataset[0])
-
 ```
+
+After you successfully download the dataset, you can apply cairosvg to render SVG into PNG format:
+```bash
+python convert_to_png.py
+```
+
 ## Citation
 
 If you use this dataset in your research, please cite the following paper:
