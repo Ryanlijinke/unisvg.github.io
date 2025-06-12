@@ -7,9 +7,7 @@ UniSVG is a comprehensive dataset designed for unified SVG generation (from text
 ## 🔥 Release
 
 ### [2024/05/30]
-- 🔥 **UniSVG** released!
-  - [🌐 Project Page](https://ryanlijinke.github.io/)
-  - [📂 Dataset](https://huggingface.co/datasets/lili24/UniSVG)
+- 🔥 **UniSVG** released! [🌐 Project Page](https://ryanlijinke.github.io/) [📂 Dataset](https://huggingface.co/datasets/lili24/UniSVG)
 
 ## Project Homepage
 
