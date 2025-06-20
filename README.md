@@ -40,16 +40,7 @@ print(UniSVG_dataset[0])
 ## Finetuning example
 After downloading our UniSVG dataset, you can use your preferred models to finetune them on UniSVG/subset of UniSVG. 
 We have tried to finetune on the following MLLMs, please feel free to get them: [LLaVA 1.5](https://huggingface.co/llava-hf/llava-1.5-7b-hf), [LLaVA-LLaMA](https://huggingface.co/Intel/llava-llama-3-8b), [LLaVA-Next](https://huggingface.co/llava-hf/llama3-llava-next-8b-hf), [GLM 4V](https://huggingface.co/THUDM/glm-4v-9b), [LLaMA 3.2](https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct), [Qwen 2.5 VL](https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct). 
-As an example, we ultized [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory) frame to do the finetuning. First, please git clone your own LLaMA-Factory repo.
 
-```bash
-git clone https://github.com/hiyouga/LLaMA-Factory.git
-cd LLaMA-Factory
-```
-```bash
-# Copy utils to your LLaMA-Factory repo.
-scp your_unisvg.github.io/utils .
-```
 Then please transfer your downloaded UniSVG dataset into LLaMA-Factory version:
 Modify and run the following two python files:
 ```bash
@@ -57,7 +48,10 @@ Modify and run the following two python files:
 python utils/transfer_to_llava.py
 python utils/transfer_to_llama_factory.py
 ```
-Then add the modified LLaMA-Factory UniSVG json into "/data", and modify the "/data/dataset_info.json" by adding:
+
+As an example, we ultized [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory) frame to do the finetuning. We saved one repo [here]() for your easy use .
+
+Then add the modified LLaMA-Factory UniSVG json into ["/data"](), and modify the "/data/dataset_info.json" by adding (our provided repo already includes this):
 ```json
   "unisvg": {
     "file_name": "llama_UniSVG_train.json",
