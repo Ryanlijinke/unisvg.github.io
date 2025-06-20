@@ -56,7 +56,7 @@ Modify and run the following two python files:
 python utils/transfer_to_llava.py
 python utils/transfer_to_llama_factory.py
 ```
-Then add the modified LLaMA-Factory UniSVG into "/data", and modify the "/data/dataset_info.json" by adding:
+Then add the modified LLaMA-Factory UniSVG json into "/data", and modify the "/data/dataset_info.json" by adding:
 ```json
   "unisvg": {
     "file_name": "llama_UniSVG_train.json",
@@ -73,7 +73,7 @@ Then add the modified LLaMA-Factory UniSVG into "/data", and modify the "/data/d
     }
   }
 ```
-Congrats! Your UniSVG is finally ready for finetuning! We offer you an example finetuning bash file using deepspeed under LLaMA factory, please refer to: [/train/train.sh](https://github.com/Ryanlijinke/unisvg.github.io/train/train.sh)
+Congrats! Your UniSVG dataset is finally ready for finetuning! We offer you an example finetuning bash file using deepspeed under LLaMA factory, please refer to: [/train/train.sh](https://github.com/Ryanlijinke/unisvg.github.io/blob/main/train/train.sh)
 
 ## Evaluation example
 After finnetuning, you can edit the inference code for your model and run the inference by:
@@ -86,7 +86,7 @@ You will get a inference json file with model answers in it, then please modify 
 python evaluation.py
 ```
 ## Acknowledgement
-This repo benefits from [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory)
+This repo benefits from [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory), thanks for your great work!
 ## Citation
 
 If you use this dataset in your research, please cite the following paper:
