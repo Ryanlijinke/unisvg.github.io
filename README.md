@@ -42,17 +42,16 @@ After downloading our UniSVG dataset, you can use your preferred models to finet
 
 ```bash
 git clone https://github.com/hiyouga/LLaMA-Factory.git
-
-```
-```bash
 cd LLaMA-Factory
 ```
 ```bash
+# Copy utils to your LLaMA-Factory repo.
 scp your_unisvg.github.io/utils .
 ```
 Then please transfer your downloaded UniSVG dataset into LLaMA-Factory version:
 Modify and run the following two python files:
 ```bash
+# Make sure you modify these files before using them!
 python utils/transfer_to_llava.py
 python utils/transfer_to_llama_factory.py
 ```
