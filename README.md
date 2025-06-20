@@ -75,7 +75,9 @@ Then add the modified LLaMA-Factory UniSVG json into "/data", and modify the "/d
   }
 ```
 Congrats! Your UniSVG dataset is finally ready for finetuning! We offer you an example finetuning bash file using deepspeed under LLaMA factory, please refer to: [/train/train.sh](https://github.com/Ryanlijinke/unisvg.github.io/blob/main/train/train.sh)
+
 ⚠️ **Special Warning:** If you interested in different stages training of LLaVA 1.5, LLaVA-LLaMA and LLaVA-Next, the LLaMA-Factory may not support, please using the [LLaVA](https://github.com/haotian-liu/LLaVA) repo for finetuning, we also offer some traing scripts for different stage training of LLaVA series in [train](https://github.com/Ryanlijinke/unisvg.github.io/tree/main/train) folder.
+
 ## Evaluation example
 After finnetuning, you can edit the inference code for your model and run the inference by:
 ```bash
