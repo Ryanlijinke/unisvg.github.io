@@ -60,7 +60,7 @@ Then please added the modified LLaMA-Factory UniSVG json into ["train/qwen25_lla
     "messages": "messages",
     "images": "images"
   },
-  "tags": {s
+  "tags": {
     "role_tag": "role",
     "content_tag": "content",
     "user_tag": "user",
