@@ -73,7 +73,7 @@ Congrats! Your UniSVG dataset is finally ready for finetuning! We offer you an e
 ⚠️ **Special Warning:** If you interested in different stages training of LLaVA 1.5, LLaVA-LLaMA and LLaVA-Next, the LLaMA-Factory may not support, please using the [LLaVA](https://github.com/haotian-liu/LLaVA) repo for finetuning, we also provided the saved LLaVA repo for easy use [here](https://github.com/Ryanlijinke/unisvg.github.io/tree/main/train/llava_llama/LLaVA).Specially, we modified the training scripts to make it suitable for finetuning LLaVA-LLaMA, for more information, please visit [the training scripts here](https://github.com/Ryanlijinke/unisvg.github.io/blob/main/train/llava_llama/LLaVA/llava/train/train.py). 
 
 ## Evaluation example
-After finnetuning, you can edit the inference code for your model and run the inference by:
+After finetuning, you can edit the inference code for your model and run the inference by:
 ```bash
 python infer.py
 ```
