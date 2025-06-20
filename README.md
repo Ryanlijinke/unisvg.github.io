@@ -89,7 +89,7 @@ You will get a inference json file with model answers in it, then please modify 
 python evaluation.py
 ```
 ## Acknowledgement
-This repo benefits from [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory), thanks for your great work!
+This repo benefits from [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory) and [LLaVA](https://github.com/haotian-liu/LLaVA), thanks for your great work!
 ## Citation
 
 If you use this dataset in your research, please cite the following paper:
