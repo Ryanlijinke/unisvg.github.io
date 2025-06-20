@@ -1,0 +1,30 @@
+deepspeed src/train.py \
+    --deepspeed examples/deepspeed/ds_z3_config.json \
+    --model_name_or_path Qwen/Qwen2.5-VL-7B-Instruct \
+    --stage sft \
+    --do_train \
+    --dataset unisvg \
+    --template qwen2_vl \
+    --finetuning_type full \
+    --freeze_vision_tower true \
+    --freeze_multi_modal_projector true \
+    --freeze_language_model false \
+    --overwrite_cache \
+    --bf16 True \
+    --output_dir your_output_dir \
+    --num_train_epochs 3 \
+    --per_device_train_batch_size 1 \
+    --gradient_accumulation_steps 8 \
+    --evaluation_strategy "no" \
+    --save_strategy "steps" \
+    --save_steps 1500 \
+    --save_total_limit 10 \
+    --learning_rate 1e-4 \
+    --weight_decay 0. \
+    --warmup_ratio 0.05 \
+    --lr_scheduler_type "cosine" \
+    --logging_steps 5 \
+    --cutoff_len 20000 \
+    --preprocessing_num_workers 64 \
+    --plot_loss \
+    --report_to "tensorboard" \

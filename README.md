@@ -37,18 +37,56 @@ UniSVG_dataset = load_dataset("lili24/UniSVG")
 # Print the first example
 print(UniSVG_dataset[0])
 ```
-After downloading our UniSVG dataset, you can use your preferred models to finetune them on UniSVG/subset of UniSVG.
+## Finetuning example
+After downloading our UniSVG dataset, you can use your preferred models to finetune them on UniSVG/subset of UniSVG. As an example, we ultized [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory) frame to do the finetuning. First, please git clone your own LLaMA-Factory repo.
 
+```bash
+git clone https://github.com/hiyouga/LLaMA-Factory.git
+
+```
+```bash
+cd LLaMA-Factory
+```
+```bash
+scp your_unisvg.github.io/utils .
+```
+Then please transfer your downloaded UniSVG dataset into LLaMA-Factory version:
+Modify and run the following two python files:
+```bash
+python utils/transfer_to_llava.py
+python utils/transfer_to_llama_factory.py
+```
+Then add the modified LLaMA-Factory UniSVG into "/data", and modify the "/data/dataset_info.json" by adding:
+```json
+  "unisvg": {
+    "file_name": "llama_UniSVG_train.json",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "messages",
+      "images": "images"
+    },
+    "tags": {
+      "role_tag": "role",
+      "content_tag": "content",
+      "user_tag": "user",
+      "assistant_tag": "assistant"
+    }
+  }
+```
+Congrats! Your UniSVG is finally ready for finetuning! We offer you an example finetuning bash file using deepspeed under LLaMA factory, please refer to: [/train/train.sh](https://github.com/Ryanlijinke/unisvg.github.io/train/train.sh)
+
+## Evaluation example
 After finnetuning, you can edit the inference code for your model and run the inference by:
 ```bash
 python infer.py
 ```
 
-You will get a inference json file with model answers in it, then please use the evaluation.py to get the final score:
+You will get a inference json file with model answers in it, then please modify and use the evaluation.py to get the final score:
 ```bash
 python evaluation.py
 ```
-
+## Acknowledgement
+This repo benefits from [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory)
 ## Citation
 
 If you use this dataset in your research, please cite the following paper:
