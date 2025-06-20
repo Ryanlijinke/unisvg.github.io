@@ -1,0 +1,39 @@
+### model
+
+model_name_or_path: /data_train/kitwei/model/Llama-3.2-11B-Vision-Instruct
+image_max_pixels: 262144
+video_max_pixels: 16384
+trust_remote_code: true
+
+### method
+stage: sft
+do_train: true
+finetuning_type: full
+deepspeed: examples/deepspeed/ds_z3_config.json
+
+
+### dataset
+dataset: unisvg
+template: mllama
+cutoff_len: 20000
+max_samples: 2000000
+overwrite_cache: true
+preprocessing_num_workers: 16
+
+### output
+output_dir: /data_train/ryanjkli/UniSVG/dataset/second_dataset/models/finetune/llama32
+logging_steps: 5
+save_steps: 1000
+plot_loss: true
+overwrite_output_dir: true
+
+### train
+per_device_train_batch_size: 1
+gradient_accumulation_steps: 8
+learning_rate: 1.0e-4
+num_train_epochs: 3.0
+lr_scheduler_type: cosine
+warmup_ratio: 0.03
+bf16: true
+ddp_timeout: 180000000
+
