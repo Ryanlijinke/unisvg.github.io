@@ -49,28 +49,28 @@ python utils/transfer_to_llava.py
 python utils/transfer_to_llama_factory.py
 ```
 
-As an example, we ultized [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory) frame to do the finetuning. We saved one repo [here]() for your easy use .
+As an example, we ultized [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory) frame to do the finetuning. We saved one LLaMA-Factory repo [here](https://github.com/Ryanlijinke/unisvg.github.io/tree/main/train/qwen25_llama32/LLaMA-Factory) for your easy use 
 
-Then add the modified LLaMA-Factory UniSVG json into ["/data"](), and modify the "/data/dataset_info.json" by adding (our provided repo already includes this):
+Then please added the modified LLaMA-Factory UniSVG json into ["train/qwen25_llama32/LLaMA-Factory/data"](https://github.com/Ryanlijinke/unisvg.github.io/tree/main/train/qwen25_llama32/LLaMA-Factory/data), and modify the ["train/qwen25_llama32/LLaMA-Factory/data/dataset_info.json"](https://github.com/Ryanlijinke/unisvg.github.io/blob/main/train/qwen25_llama32/LLaMA-Factory/data/dataset_info.json) by adding (our provided repo already includes this):
 ```json
-  "unisvg": {
-    "file_name": "llama_UniSVG_train.json",
-    "formatting": "sharegpt",
-    "columns": {
-      "messages": "messages",
-      "images": "images"
-    },
-    "tags": {
-      "role_tag": "role",
-      "content_tag": "content",
-      "user_tag": "user",
-      "assistant_tag": "assistant"
-    }
+"unisvg": {
+  "file_name": "llama_UniSVG_train.json",
+  "formatting": "sharegpt",
+  "columns": {
+    "messages": "messages",
+    "images": "images"
+  },
+  "tags": {s
+    "role_tag": "role",
+    "content_tag": "content",
+    "user_tag": "user",
+    "assistant_tag": "assistant"
   }
+}
 ```
-Congrats! Your UniSVG dataset is finally ready for finetuning! We offer you an example finetuning bash file using deepspeed under LLaMA factory, please refer to: [/train/train.sh](https://github.com/Ryanlijinke/unisvg.github.io/blob/main/train/train.sh)
+Congrats! Your UniSVG dataset is finally ready for finetuning! We offer you an example finetuning bash file using deepspeed under LLaMA Factory, please refer to: [/train/qwen25_llama32/train.sh](https://github.com/Ryanlijinke/unisvg.github.io/blob/main/train/qwen25_llama32/train.sh)
 
-⚠️ **Special Warning:** If you interested in different stages training of LLaVA 1.5, LLaVA-LLaMA and LLaVA-Next, the LLaMA-Factory may not support, please using the [LLaVA](https://github.com/haotian-liu/LLaVA) repo for finetuning, we also offer some traing scripts for different stage training of LLaVA series in [train](https://github.com/Ryanlijinke/unisvg.github.io/tree/main/train) folder.
+⚠️ **Special Warning:** If you interested in different stages training of LLaVA 1.5, LLaVA-LLaMA and LLaVA-Next, the LLaMA-Factory may not support, please using the [LLaVA](https://github.com/haotian-liu/LLaVA) repo for finetuning, we also provided the saved LLaVA repo for easy use [here](https://github.com/Ryanlijinke/unisvg.github.io/tree/main/train/llava_llama/LLaVA).Specially, we modified the training scripts to make it suitable for finetuning LLaVA-LLaMA, for more information, please visit [the training scripts here](https://github.com/Ryanlijinke/unisvg.github.io/blob/main/train/llava_llama/LLaVA/llava/train/train.py). 
 
 ## Evaluation example
 After finnetuning, you can edit the inference code for your model and run the inference by:
