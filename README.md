@@ -1,4 +1,7 @@
-[![ACMMM 2025 Dataset Track](https://img.shields.io/badge/🏆%20ACMMM%202025-Dataset%20Track-gold?style=for-the-badge)](https://acmmm2025.org/)
+# 🏆 **Accepted to ACM MM 2025 Dataset Track!**
+
+> **UniSVG** has been officially accepted to the **ACM Multimedia 2025 Dataset Track** 🎉  
+> [🌐 Project Page](https://ryanlijinke.github.io/) | [🏆 Conference Website](https://acmmm2025.org/)
 
 # UniSVG Dataset
 
