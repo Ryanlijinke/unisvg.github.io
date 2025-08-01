@@ -1,3 +1,5 @@
+[![ACMMM 2025 Dataset Track](https://img.shields.io/badge/🏆%20ACMMM%202025-Dataset%20Track-gold?style=for-the-badge)](https://acmmm2025.org/)
+
 # UniSVG Dataset
 
 UniSVG is a comprehensive dataset designed for unified SVG generation (from textual prompts and images) and SVG understanding (color, category, usage, etc.). It comprises 525k data items tailored for Multi-modal Large Language Models (MLLM) training and evaluation. You can access the dataset on [Hugging Face](https://huggingface.co/datasets/lili24/UniSVG).
@@ -7,7 +9,7 @@ UniSVG is a comprehensive dataset designed for unified SVG generation (from text
 ## 🔥 Release
 
 ### [2025/07/31]
-- 🔥 **UniSVG** got accepted by [🏆 ACM MM 2025 Dataset Track](https://acmmm2025.org/)! [🌐 Project Page](https://ryanlijinke.github.io/) 
+- 🔥 **UniSVG** got accepted by [🏆 ACM MM 2025 Dataset Track](https://acmmm2025.org/)!!! [🌐 Project Page](https://ryanlijinke.github.io/) 
 
 ### [2025/06/03]
 - 🔥 **UniSVG** dataset images updated! [📂 Dataset](https://huggingface.co/datasets/lili24/UniSVG/blob/main/png.zip) [🌐 Project Page](https://ryanlijinke.github.io/) 
