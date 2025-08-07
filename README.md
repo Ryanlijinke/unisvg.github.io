@@ -98,8 +98,9 @@ This repo benefits from [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory
 If you use this dataset in your research, please cite the following paper:
 
 ```bibtex
-@article{li2025unisvg,
+@inproceedings{li2025unisvg,
   title={UniSVG: A Unified Dataset for Vector Graphic Understanding and Generation with Multimodal Large Language Models},
   author={Li, Jinke and Yu, Jiarui and Wei, Chenxing and Dong, Hande and Lin, Qiang and Yang, Liangjing and Wang, Zhicai and Hao, Yanbin},
+  booktitle={Proceedings of the 33rd ACM international conference on multimedia},
   year={2025}
 }
