@@ -49,9 +49,9 @@ print(UniSVG_dataset[0])
 
 ## Prompts examples
 ### Data construction prompts examples
-Please refer to prompts/data_construction_example.py for detailed information.
+Please refer to `prompts/data_construction_example.py` for detailed information.
 ### Inference prompts examples
-Please refer to prompts/Inference_prompts _examples.py for detailed information.
+Please refer to `prompts/Inference_prompts _examples.py` for detailed information.
 
 ## Finetuning example
 After downloading our UniSVG dataset, you can use your preferred models to finetune them on UniSVG/subset of UniSVG. 
