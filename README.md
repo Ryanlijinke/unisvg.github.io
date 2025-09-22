@@ -12,7 +12,7 @@ UniSVG is a comprehensive dataset designed for unified SVG generation (from text
 ## 🔥 Release
 
 ### [2025/09/22]
-- 🔥 **Qwen2.5-VL-finetuned** released! [Jaireyu/Qwen2.5-VL-UniSVG-finetuned](https://huggingface.co/Jaireyu/Qwen2.5-VL-UniSVG-finetuned)
+- 🔥 **Qwen2.5-VL-finetuned** released! [🌐 Jaireyu/Qwen2.5-VL-UniSVG-finetuned](https://huggingface.co/Jaireyu/Qwen2.5-VL-UniSVG-finetuned)
 
 ### [2025/07/31]
 - 🔥 **UniSVG** got accepted by [🏆 ACM MM 2025 Dataset Track](https://acmmm2025.org/)🎉 [🌐 Project Page](https://ryanlijinke.github.io/) 
