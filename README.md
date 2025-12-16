@@ -12,7 +12,7 @@ UniSVG is a comprehensive dataset designed for unified SVG generation (from text
 ## 🔥 Release
 
 ### [2025/11/27]
-- 🔥 We are excited to announce that our UniSVG benchmark is used by [Qwen3-VL](https://arxiv.org/pdf/2511.21631)!
+- 🔥 We are glad to announce that our UniSVG benchmark is used by [Qwen3-VL](https://arxiv.org/pdf/2511.21631)!
 
 ### [2025/09/22]
 - 🔥 **Qwen2.5-VL-finetuned** released! [🌐 Jaireyu/Qwen2.5-VL-UniSVG-finetuned](https://huggingface.co/Jaireyu/Qwen2.5-VL-UniSVG-finetuned)
